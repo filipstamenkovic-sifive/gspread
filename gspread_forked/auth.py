@@ -62,7 +62,7 @@ def local_server_flow(client_config, scopes, port=0):
     a local server flow.
     """
     flow = InstalledAppFlow.from_client_config(client_config, scopes)
-    return flow.run_local_server(port=port)
+    return flow.run_local_server(port=port, start_browser=False)
 
 
 def console_flow(client_config, scopes):
